@@ -31,6 +31,7 @@
 * [Guava][Guava]
 * [Jackson][Jackson]
 * [JPush][JPush]
+* [KotlinxCoroutines][KotlinxCoroutines]
 * [LitePal][LitePal]
 * [Mars][Mars]
 * [MiPush][MiPush]
@@ -59,7 +60,7 @@
 1. 首先开启混淆，设置 `minifyEnabled true`；
 2. 添加依赖：
     ```groovy
-    implementation "com.blankj:free-proguard:0.0.10"
+    implementation "com.blankj:free-proguard:1.0.2"
     ```
 3. 把项目中的实体类加入到 `proguard-rules.pro` 文件中，一般为 `-keep class urpackage.xx.bean/entity/model.** { *; }`，或者使用 `@Keep` 注解这些实体类；
 4. 把项目中需要防混淆的 jar 加入到 `proguard-rules.pro` 文件中，比如支付宝 SDK 的 `-libraryjars libs/alipaySDK-20150602.jar`，如果要对所有 jar 都防混，那么使用 `-libraryjars libs` 即可；
@@ -80,10 +81,17 @@
 ## [ChangeLog](https://github.com/Blankj/FreeProGuard/blob/master/CHANGELOG.md)
 
 
+## 打个小广告
+
+欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」，我会在星球中分享 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架、大厂面经、[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode) 更详尽的说明...一切我所了解的知识，你可以通过支付进入我的星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」进行体验，加入后优先观看星球中精华的部分，如果觉得星球的内容对自身没有收益，你可以自行申请退款退出星球，也没必要加我好友；**如果你已确定要留在我的星球，可以通过扫描如下二维码（备注：基你太美+你的星球昵称）加我个人微信，方便我后续拉你进群(PS：进得越早价格越便宜)。**
+
+![我的二维码](https://raw.githubusercontent.com/Blankj/AndroidUtilCode/master/art/wechat.png)
+
+
 
 [logo]: https://raw.githubusercontent.com/Blankj/FreeProGuard/master/art/logo.png
 
-[fpgsvg]: https://img.shields.io/badge/FreeProGuard-v0.0.10-brightgreen.svg
+[fpgsvg]: https://img.shields.io/badge/FreeProGuard-v1.0.2-brightgreen.svg
 [fpg]: https://github.com/Blankj/FreeProGuard
 
 [licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg
@@ -115,6 +123,7 @@
 [ImmersionBar]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-ImmersionBar.pro
 [Jackson]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Jackson.pro
 [JPush]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-JPush.pro
+[KotlinxCoroutines]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-KotlinxCoroutines.pro
 [LitePal]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-LitePal.pro
 [Mars]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Mars.pro
 [MiPush]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-MiPush.pro
